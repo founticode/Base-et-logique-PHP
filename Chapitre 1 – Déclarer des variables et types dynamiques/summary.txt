@@ -1,0 +1,83 @@
+PHP Basics – Variables & Data Types (Summary)
+1️⃣ Variables
+
+In PHP, every variable starts with $
+
+$name = "Ismail";
+$age = 22;
+
+
+PHP uses dynamic typing (no need to declare the type)
+
+2️⃣ Data Types
+
+string → text ("Hello")
+
+int → integer (10)
+
+float → decimal number (10.5)
+
+bool → boolean (true / false)
+
+array → list of values (["red", "blue"])
+
+null → empty value
+
+3️⃣ String Concatenation
+
+Use . to join strings
+
+echo "Age: " . $age;
+
+4️⃣ Arithmetic Operations
+$a = 10;
+$b = 5;
+
+echo $a + $b; // addition
+echo $a - $b; // subtraction
+echo $a * $b; // multiplication
+echo $a / $b; // division
+
+5️⃣ Boolean & Ternary Operator
+
+true means yes / correct
+
+false means no / incorrect
+
+echo ($student ? "Yes" : "No");
+
+
+If $student = true → outputs "Yes"
+
+If $student = false → outputs "No"
+
+📌 "Yes" and "No" are just strings, not booleans.
+
+6️⃣ Type Casting
+
+Convert a variable to another type
+
+$note = "15";
+$noteInt = (int)$note;
+
+7️⃣ Debugging (Check Type & Value)
+gettype($x);
+var_dump($x);
+
+
+gettype() → shows the type
+
+var_dump() → shows type + value + length
+
+8️⃣ Output
+echo "Hello World";
+
+✅ Key Notes
+
+PHP automatically detects variable types
+
+Use . for string concatenation
+
+Use var_dump() to understand variables
+
+Ternary operator is a short version of if / else
