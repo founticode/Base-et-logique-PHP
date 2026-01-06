@@ -1,0 +1,129 @@
+PHP Basics – Variables & Conditions (Summary)
+1️⃣ Variables
+
+Every variable in PHP starts with $
+
+$name = "Ismail";
+$age = 22;
+
+
+PHP uses dynamic typing (no need to declare the type)
+
+2️⃣ Data Types
+
+string → text ("Hello")
+
+int → integer (10)
+
+float → decimal (10.5)
+
+bool → true / false
+
+array → list of values
+
+null → empty value
+
+3️⃣ String Concatenation
+
+Use . to join strings
+
+echo "Age: " . $age;
+
+4️⃣ Arithmetic Operations
+echo $a + $b;
+echo $a - $b;
+echo $a * $b;
+echo $a / $b;
+
+5️⃣ Boolean Values
+
+true = yes / correct
+
+false = no / incorrect
+
+Used mainly in conditions
+
+6️⃣ if / else / else if
+
+Used to execute code based on conditions.
+
+if ($age >= 18) {
+  echo "Adult";
+} else {
+  echo "Minor";
+}
+
+7️⃣ Comparison Operators
+
+== → equal value
+
+=== → equal value and type
+
+!= → not equal
+
+> < >= <=
+
+"10" == 10   // true
+"10" === 10 // false
+
+8️⃣ Logical Operators
+
+&& (AND): all conditions must be true
+
+|| (OR): at least one condition is true
+
+! (NOT): reverses the boolean value
+
+if (!$isAdmin) {
+  echo "Not an admin";
+}
+
+9️⃣ switch / case
+
+Used when checking one variable with multiple values.
+
+switch ($day) {
+  case "Monday":
+    echo "Start of the week";
+    break;
+
+  case "Saturday":
+  case "Sunday":
+    echo "Weekend";
+    break;
+
+  default:
+    echo "Normal day";
+}
+
+🔟 Ternary Operator
+
+Short version of if / else
+
+echo ($isWeekend ? "Yes, it's the weekend" : "No, it's a weekday");
+
+1️⃣1️⃣ Type Casting
+
+Convert variable type explicitly.
+
+$note = "15";
+$noteInt = (int)$note;
+
+1️⃣2️⃣ Debugging
+
+Check variable type and value.
+
+gettype($x);
+var_dump($x);
+
+✅ Key Takeaways
+
+PHP decides variable types automatically
+
+Conditions control program logic
+
+Use !$variable instead of == false
+
+Use ternary operator for simple conditions
+
+switch is useful for multiple fixed values
