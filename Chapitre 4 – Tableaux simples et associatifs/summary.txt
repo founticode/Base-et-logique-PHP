@@ -1,0 +1,111 @@
+PHP ARRAYS – SUMMARY
+
+What is an Array in PHP
+An array is a variable that can store multiple values in one place.
+It helps organize data and avoid creating many separate variables.
+
+Arrays can be created using:
+
+array()
+
+[]
+
+Example:
+$colors = ["Red", "Blue", "Green"];
+
+Indexed (Simple) Arrays
+Indexed arrays use numeric indexes starting from 0.
+
+Example:
+$colors = ["Red", "Blue", "Green"];
+
+Accessing values:
+$colors[0] → Red
+$colors[1] → Blue
+
+Associative Arrays
+Associative arrays use keys instead of numeric indexes.
+
+Example:
+$person = [
+"name" => "Ismail",
+"age" => 22
+];
+
+Accessing values:
+$person["name"]
+$person["age"]
+
+Browsing Arrays (Loops)
+
+Using for loop (indexed arrays):
+
+Often used with count()
+
+Access elements by index
+
+Using foreach loop:
+
+Best and simplest way to browse arrays
+
+Works with indexed and associative arrays
+
+Example (indexed):
+foreach ($colors as $color)
+
+Example (associative):
+foreach ($person as $key => $value)
+
+count() Function
+count() returns the number of elements in an array.
+
+Example:
+count($colors) → 3
+
+Common use:
+
+Controlling loops
+
+Knowing array size
+
+Adapts automatically after add/remove
+
+Works with:
+
+Indexed arrays
+
+Associative arrays
+
+array_push()
+Adds one or more elements to the end of an array.
+
+Example:
+array_push($colors, "Yellow");
+
+array_merge()
+Combines two or more arrays into one.
+
+Example:
+array_merge($array1, $array2);
+
+unset()
+Removes an element from an array.
+
+Example:
+unset($colors[1]);
+
+Note:
+
+The index may be missing
+
+count() still returns correct number of elements
+
+Important Notes
+
+Arrays help manage data efficiently
+
+foreach is preferred for arrays
+
+count() is essential for loops
+
+Arrays can store strings, numbers, or mixed data

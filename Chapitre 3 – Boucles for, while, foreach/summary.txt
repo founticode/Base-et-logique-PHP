@@ -1,6 +1,6 @@
 👇
 
-📘 PHP Loops – Summary (for .txt file)
+📘 PHP Loops – Summary
 🎯 Purpose of Loops
 
 Loops are used to repeat a block of code, iterate over data (arrays), and automate repetitive tasks.
