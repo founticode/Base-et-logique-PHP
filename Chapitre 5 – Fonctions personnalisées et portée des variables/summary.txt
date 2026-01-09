@@ -1,0 +1,88 @@
+PHP FUNCTIONS – SUMMARY
+
+What is a Function
+A function is a block of reusable code that runs only when it is called.
+Functions help organize code, reduce repetition, and make programs easier to maintain.
+
+Defining a Function
+Functions are created using the keyword function.
+
+Syntax:
+function functionName() {
+// code
+}
+
+Example:
+function sayHello() {
+echo "Hello";
+}
+
+Calling a function:
+sayHello();
+
+Function Arguments (Parameters)
+Arguments are values passed to a function so it can work with data.
+
+Example:
+function greet($name) {
+echo "Hello " . $name;
+}
+
+greet("Ismail");
+
+Default Arguments
+You can give a default value to an argument if no value is passed.
+
+Example:
+function greet($name = "Guest") {
+echo "Hello " . $name;
+}
+
+Return Values
+The return keyword sends a value back from a function.
+
+Example:
+function sum($a, $b) {
+return $a + $b;
+}
+
+$result = sum(3, 4);
+
+Variable Scope
+
+• Local Scope
+Variables declared inside a function are local and cannot be used outside it.
+
+• Global Scope
+Variables declared outside a function need the global keyword to be used inside it.
+
+Example:
+global $x;
+
+• Static Scope
+Static variables keep their value between function calls.
+
+Example:
+static $count;
+
+Best Practice: Code Factorization
+Functions avoid repeating the same code and make programs cleaner and more professional.
+
+Example:
+function add($a, $b) {
+return $a + $b;
+}
+
+KEY POINTS
+
+Functions run only when called
+
+Arguments pass data to functions
+
+return gives back a result
+
+Scope controls where variables work
+
+static keeps variable values
+
+Functions make code clean and reusable

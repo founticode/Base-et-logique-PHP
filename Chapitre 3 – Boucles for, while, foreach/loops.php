@@ -92,4 +92,14 @@ for ($i = 1; $i <= 5; $i++) {
     echo $i . "<br>";
 }
 
+echo "<br>";
+
+$i = 1;
+$total = 0;
+while ($i <= 20) {
+    $total = $total + $i;
+    $i++;
+}
+echo $total;
+
 ?>
