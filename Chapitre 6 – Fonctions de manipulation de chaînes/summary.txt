@@ -1,0 +1,111 @@
+PHP STRINGS – SUMMARY
+
+1️⃣ Purpose
+
+Learn to manipulate text strings in PHP:
+
+Modify text
+
+Search within text
+
+Split and join strings
+
+Remove spaces
+
+Handle quotation marks and concatenation
+
+2️⃣ Common Functions
+Function	         Description	                           Example
+strlen()	      Count number of characters in a string	   strlen("Hello") → 5
+strtoupper()	  Convert text to uppercase	                   strtoupper("hello") → HELLO
+strtolower()	  Convert text to lowercase	                   strtolower("HELLO") → hello
+ucfirst()	      Capitalize the first character	           ucfirst("hello") → Hello
+
+3️⃣ Search and Replace
+strpos()
+
+Finds the position of the first occurrence of a substring.
+
+Index starts at 0
+
+Returns false if not found
+
+Example:
+
+$text = "Hello World";
+echo strpos($text, "World"); // Output: 6
+
+str_replace()
+
+Replaces all occurrences of a substring with another.
+
+Example:
+
+$text = "Hello World";
+echo str_replace("World", "PHP", $text); // Output: Hello PHP
+
+4️⃣ Cutting and Joining Strings
+explode()
+
+Split a string into an array using a separator.
+
+$text = "apple,banana,orange";
+$fruits = explode(",", $text);
+
+implode()
+
+Join an array into a string with a separator.
+
+$fruits = ["apple", "banana"];
+echo implode(" - ", $fruits); // Output: apple - banana
+
+5️⃣ Removing Spaces
+trim()
+
+Removes spaces from the beginning and end of a string.
+
+$text = "   Hello World   ";
+echo trim($text); // Output: Hello World
+
+6️⃣ Concatenation and Quotes
+Concatenation (.)
+
+Join strings together.
+
+$first = "Hello";
+$last = "World";
+echo $first . " " . $last; // Output: Hello World
+
+Quotation Marks
+
+Double quotes " " → variables inside are parsed
+
+Single quotes ' ' → variables are treated as text
+
+$name = "Ismail";
+echo "Hello $name"; // Output: Hello Ismail
+echo 'Hello $name'; // Output: Hello $name
+
+7️⃣ Important Notes
+
+strpos() is case-sensitive
+
+Use === false to check if substring not found
+
+explode() and implode() are useful with arrays
+
+trim() is essential for cleaning user input
+
+✅ Summary of Functions
+
+Function	    Description
+strlen()	    Count characters
+strtoupper()	Uppercase
+strtolower()	Lowercase
+ucfirst()	    Capitalize first letter
+strpos()	    Find position of substring
+str_replace()	Replace substring
+explode()	    Split string into array
+implode()	    Join array into string
+trim()	        Remove spaces
+.	            Concatenate strings
