@@ -13,6 +13,8 @@ function calculate($nb1, $nb2, $operation) {
                 return "Division by zero is not allowed.";
             }
             return $nb1 / $nb2;
+        case '%':
+            return $nb1 % $nb2;
         default:
             return "Invalid operation.";
     }
@@ -101,6 +103,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <option value="-">Subtraction</option>
         <option value="*">Multiplication</option>
         <option value="/">Division</option>
+        <option value="%">Modulus</option>
+
     </select><br><br>
 
     <input type="submit" value="Calculate">
