@@ -1,0 +1,144 @@
+Summary – Calculator (HTML + PHP + CSS)
+🎯 Educational Objective
+
+Create a simple calculator that receives two numbers and an operation from an HTML form, processes the data using PHP, and displays the result.
+The project focuses on:
+
+Data validation
+
+Conditions
+
+Functions
+
+Safe result display
+
+Basic CSS styling
+
+📚 Main Components
+1️⃣ HTML Form
+
+The form contains:
+
+Input for Number 1
+
+Input for Number 2
+
+A select menu for the operation (+ − × ÷)
+
+A Submit button
+
+📌 Data is sent using POST to the same page.
+
+Purpose:
+Collect user input and send it to PHP for processing.
+
+2️⃣ Detecting Form Submission
+if ($_SERVER["REQUEST_METHOD"] == "POST")
+
+
+✔ Ensures the code runs only after form submission
+✔ Prevents errors when the page loads for the first time
+
+3️⃣ Retrieving Form Data
+$nb1 = $_POST['nb1'];
+$nb2 = $_POST['nb2'];
+$operation = $_POST['operation'];
+
+
+✔ Stores user input in PHP variables
+✔ These values are used for calculation
+
+4️⃣ Data Validation
+🔹 Numeric Check
+
+is_numeric() ensures inputs are numbers
+
+Prevents invalid calculations
+
+🔹 Division by Zero
+
+If operation is / and second number is 0
+
+Calculation is blocked
+
+📌 Validation protects the application from errors.
+
+5️⃣ Function: calculate()
+
+Centralizes calculation logic
+
+Receives numbers and operation as parameters
+
+Uses switch to perform the correct operation
+
+Returns the result using return
+
+📌 Advantages:
+
+Clean code
+
+Reusable logic
+
+Better organization
+
+6️⃣ Switch Statement
+switch ($operation)
+
+
+✔ Handles multiple operations
+✔ Each case represents one operation (+ − × ÷)
+
+7️⃣ Return Keyword
+
+return sends the result back from the function
+
+Does not display the result
+
+Display is handled outside the function
+
+📌 Rule:
+
+Functions calculate → return
+Display happens with echo outside the function
+
+8️⃣ isset()
+if (isset($result))
+
+
+✔ Checks if $result exists
+✔ Prevents errors when the form has not been submitted
+
+📌 Purpose:
+
+Avoid undefined variable warnings
+
+Safe result display
+
+9️⃣ Displaying the Result
+
+Result appears below the form
+
+Displayed only if $result exists
+
+Uses a simple <h3> tag
+
+🔟 CSS Styling
+
+Centers the calculator
+
+Adds spacing and background
+
+Styles inputs and buttons
+
+Highlights result in green
+
+📌 Goal:
+Improve usability and visual clarity with simple CSS.
+
+✅ Final Outcome
+
+Functional calculator
+
+Safe and validated input
+
+Proper use of functions and conditions
